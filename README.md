@@ -42,3 +42,32 @@ Questo git-template fornisce lo scaffold di una web application realizzata con L
 	npm run dev
 	```
 - Puntare il browser all'indirizzo mostrato in terminale per controllare che tutto funzioni.
+
+
+:pacco: CONSEGNA
+Creare un progetto basandoci su uno Scaffold più avanzato. Questo progetto dovrà collegarsi ad un database per recuperare alcuni dati.
+
+:razzo: COME AVVIARE IL PROGETTO
+Create una vostra repo laravel-model-controller a partire dal mio template: con boostrap o senza bootstrap.
+Seguite i passaggi descritti nel readme.md della mia repo per configurare ed avviare tutto.
+Poi ricordatevi di avviare il progetto usando i DUE terminali.
+
+:data-trek: COME PREDISPORRE I DATI
+Tramite phpMyAdmin create un nuovo database laravel_model_controller
+Importate in questo database il dump che trovate in allegato.
+
+:pergamena: COME PROCEDERE
+Assicuratevi di avere le corrette credenziali nella sezione database del file .ENV (incluso il nome del DB).
+Create un model Movie
+php artisan make:model Movie
+Create un controller che gestirà la rotta "/"
+php artisan make:controller Guest/PageController
+All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo.
+
+:regalo: BONUS
+Provate a creare più rotte, ad esempio una rotta "/" con un breve paragrafo di benvenuto e poi una rotta "/movies" con la lista dei film.
+Avrete bisogno di due rotte, due metodi nel controller e due viste!
+
+
+Da chiedere: 
+	ma devo usare il server del  npm run dev o dell'artisan serve? quest'ultimo non ha css
