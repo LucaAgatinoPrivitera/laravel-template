@@ -28,7 +28,7 @@
 
 
 ## Migration e Faker (non il giocatore ) ##
-### Migration crea la struttura###
+### Migration crea la struttura ###
 
 `php artisan make:migration create_users_table` (creo una migration in database/migrations)
 
