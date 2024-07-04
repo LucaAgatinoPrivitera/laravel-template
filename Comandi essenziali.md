@@ -66,3 +66,8 @@ Esempio
         }
     }
 ```
+
+
+
+## Resource Controller ##
+`php artisan make:controller --resource Guest/NomeController` così si crea un resource controller, il quale ci permette di creare una CRUD (Create, Read, Update/Patch, Delete).
