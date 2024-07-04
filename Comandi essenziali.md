@@ -1,17 +1,17 @@
 Comandi essenziali:
 
-*`composer install`
-*`php artisan key:generate` (mi da errore)
-*`npm i`
-*`php artisan serve` (lo devo fare dopo run dev a quanto pare mi da errore altrimenti)
-*`npm run dev`
+`composer install`
+`php artisan key:generate` (mi da errore)
+`npm i`
+`php artisan serve` (lo devo fare dopo run dev a quanto pare mi da errore altrimenti)
+`npm run dev`
 
 
+```
+Controller e Model
+`php artisan make:controller Folder/NameController` (creo il controller dove dentro ci metto le funzioni per le route)
 
---```Controller e Model--
-*`php artisan make:controller Folder/NameController` (creo il controller dove dentro ci metto le funzioni per le route)
-
-*`php artisan make:model MyModel` (con questo creo un modello, che sarà il DB)
+`php artisan make:model MyModel` (con questo creo un modello, che sarà il DB)
 ```
 
 
