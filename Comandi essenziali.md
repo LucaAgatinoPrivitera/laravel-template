@@ -38,6 +38,8 @@
 
 `php artisan migrate:reset` (resetto tutto quanto, hard delete praticamente)
 
+
+
 ## Seeder ##
 ### Seeder popola la struttura ###
 
