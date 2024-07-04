@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Guest;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\MyModel;
 use Illuminate\Http\Request;
 
 class NomeController extends Controller
@@ -12,7 +12,13 @@ class NomeController extends Controller
      */
     public function index()
     {
-        //
+        $gamesList = MyModel::all();
+
+        $data = [
+            "catalog" => $gamesList
+        ];
+
+        return view("games.index", $data);
     }
 
     /**
