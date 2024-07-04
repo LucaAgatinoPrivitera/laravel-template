@@ -45,4 +45,4 @@ Alla fine della funzione serve il `->save()`
 `php artisan db:seed --class=UsersTableSeeder` (eseguo il seed)
 
 `public function run (Faker $faker)` da mettere nel seeder ci permette di compilare in automatico e casualmente
-RICHIEDE: use Faker\Generator as Faker;
+#### RICHIEDE: use Faker\Generator as Faker; ####
