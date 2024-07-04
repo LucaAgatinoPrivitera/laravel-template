@@ -13,8 +13,9 @@
 
 
 ## Controller e Model ##
-```
+
 ### Il controller mi permette di dare i dati attraverso per esempio $dato, a una o più pagine attraverso il web.php. ###
+```
 
 php artisan make:controller Folder/NameController (creo il controller dove dentro ci metto le funzioni per le route)
 
@@ -25,8 +26,9 @@ php artisan make:model MyModel (con questo creo un modello, che sarà il DB)
 
 
 ## Migration e Faker (non il giocatore ) ##
-```
+
 ### Migration crei la struttura, e seeder invece popoli la struttura. ###
+```
 
 php artisan make:migration create_users_table (creo una migration in database/migrations)
 
