@@ -1,14 +1,15 @@
-Comandi essenziali:
+# Comandi essenziali: #
 
-`composer install`
+`composer install` &nbsp;
 `php artisan key:generate` (mi da errore)
+
 `npm i`
 `php artisan serve` (lo devo fare dopo run dev a quanto pare mi da errore altrimenti)
 `npm run dev`
 
 
 
-`Controller e Model`
+### Controller e Model ###
 ```
 php artisan make:controller Folder/NameController (creo il controller dove dentro ci metto le funzioni per le route)
 
@@ -18,7 +19,7 @@ php artisan make:model MyModel (con questo creo un modello, che sarà il DB)
 
 
 
-`Migration e Faker (non il giocatore)`
+### Migration e Faker (non il giocatore )###
 ```
 php artisan make:migration create_users_table (creo una migration in database/migrations)
 
