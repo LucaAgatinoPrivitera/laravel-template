@@ -16,14 +16,9 @@
 
 ### Il controller mi permette di dare i dati attraverso per esempio $dato, a una o più pagine attraverso il web.php. ###
 
-`php artisan make:controller` Folder/NameController (creo il controller dove dentro ci metto le funzioni per le route)
-
 `php artisan make:model MyModel` (con questo creo un modello, che sarà il DB)
 
 `php artisan make:controller Folder/NameController` (creo il controller dove dentro ci metto le funzioni per le route)
-
-`php artisan make:model MyModel` (con questo creo un modello, che sarà il DB)
-
 
 
 
