@@ -28,8 +28,7 @@
 
 
 ## Migration e Faker (non il giocatore ) ##
-
-### Migration crei la struttura, e seeder invece popoli la struttura. ###
+### Migration crea la struttura###
 
 `php artisan make:migration create_users_table` (creo una migration in database/migrations)
 
@@ -38,6 +37,9 @@
 `php artisan migrate:rollback` (torno allo status precedente, annulla tutto il bloccone di codice eseguito prima)
 
 `php artisan migrate:reset` (resetto tutto quanto, hard delete praticamente)
+
+## Seeder ##
+### Seeder popola la struttura ###
 
 `php artisan make:seeder UsersTableSeeder` (creo un seeder)
 Alla fine della funzione serve il `->save()`
