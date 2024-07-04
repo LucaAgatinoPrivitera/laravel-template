@@ -27,7 +27,7 @@
 
 
 
-## Migration e Faker (non il giocatore ) ##
+## Migration ##
 ### Migration crea la struttura ###
 
 `php artisan make:migration create_users_table` (creo una migration in database/migrations)
@@ -47,7 +47,7 @@ $table->string('Stazione di partenza')->nullable(); //Così può essere anche nu
 
 
 ## Seeder ##
-### Seeder popola la struttura ###
+### Seeder popola la struttura (Faker permette di fare il tutto in modo random) ###
 
 `php artisan make:seeder UsersTableSeeder` (creo un seeder)
 Alla fine della funzione serve il `->save()`
