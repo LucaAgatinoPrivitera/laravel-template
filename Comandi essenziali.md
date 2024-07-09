@@ -20,6 +20,7 @@
 
 `php artisan make:controller Folder/NameController` (creo il controller dove dentro ci metto le funzioni per le route)
 
+### Il model va messo al singolare ###
 
 
 ## Migration ##
@@ -75,3 +76,17 @@ Esempio
 
 ## Resource Controller ##
 `php artisan make:controller --resource Guest/NomeController` così si crea un resource controller, il quale ci permette di creare una CRUD (Create, Read, Update/Patch, Delete).
+### Controller direttamente collegato al model senza ricordarsi di fare l'import ###
+`php artisan make:controller PhotoController --model=Photo --resource`
+
+Nello show posso usare `findOrFail($id)` in modo tale che nel caso l'id non esista io ottenga automaticamente 404 error al posto dell'if
+```
+$gamesList = Comic::findOrFail($id);
+```
+
+
+
+Posso migrare e lanciare un seed specifico
+php artisan migrate:fresh && php artisan db:seed --class=NomeDelSeeder
+
+Altrimenti php artisan migrate:fresh e devo mettere dentro DatabaseSeeder, devo aggiungere this->call qualcosa
